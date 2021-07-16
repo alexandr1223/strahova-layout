@@ -1,0 +1,144 @@
+html,
+body 
+	height: 100%
+	font-family: "Montserrat-Regular"
+
+.wrapper 
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main 
+	word-wrap: break-word
+	flex: 1 0 auto
+
+.footer 
+	flex: 0 0 auto
+
+.container
+	max-width: 1580px
+	margin: 0 auto
+
+.title
+	word-wrap: break-word
+	font-size: 56px
+	font-family: "Montserrat-Bold"
+	color: #000
+	line-height: 80px
+	&--white
+		color: #fff
+
+.subtitle
+	word-wrap: break-word
+
+.btn
+	font-size: 16px
+	padding: 17px 67px
+	background: linear-gradient(135deg, rgb(13, 118, 151), rgb(2, 77, 22))
+	border-radius: 5px
+	color: #fff
+	width: max-content
+	border: none
+	cursor: pointer
+	transition: .4s
+	&:hover
+		background: linear-gradient(135deg, #0D7697, #0D7697)
+
+input
+	cursor: pointer
+
+a
+	color: #000
+	transition: .4s
+	
+.header
+	background: #fff
+	&__cover
+		display: flex
+		padding: 30px 60px
+		align-items: center
+	&__socialMobile
+		display: none
+	&__mobile
+		display: none
+	&__nav		
+        transition: .4s
+	&__logo
+		display: flex
+		align-items: center
+		svg
+			margin-right: 20px
+		span
+			font-size: 24px
+			font-family: "Montserrat-Bold"
+	&__menu
+		margin-left: 125px
+		display: flex
+		align-items: center
+		li
+			a
+				font-size: 18px
+				color: #000
+				&:hover
+					color: #08BDE2
+			&:not(:last-child)
+				margin-right: 70px
+	&__social
+		margin-left: auto
+		display: flex
+		align-items: center
+		a
+			font-size: 24px 
+			font-family: "Montserrat-Bold"
+			color: #000
+			margin-right: 30px
+	&__free	
+		color: #0DAC1D
+		font-size: 16px
+		font-family: "Montserrat-Bold"
+
+.footer
+	.container
+		display: flex
+		flex-direction: column
+	&__info
+		display: flex
+		flex-direction: column
+		margin-bottom: 80px
+		padding: 0 60px
+	&__title
+		font-size: 20px
+		font-family: "Montserrat-Bold"
+		margin-bottom: 30px
+	&__text
+		font-size: 18px
+		&:not(:last-child)
+			margin-bottom: 20px
+	&__block
+		display: flex
+		justify-content: space-between
+		padding: 57px 0 80px 0
+		margin: 0 60px
+		border-top: 1px solid #ECECEC
+	&__logo
+		display: flex
+		svg
+			margin-right: 20px
+		span
+			font-size: 24px
+			font-family: "Montserrat-Bold"
+	&__social
+		display: flex
+	&__socialItem
+		display: flex
+		flex-direction: column
+		&:not(:last-child)
+			margin-right: 125px
+		a
+			font-size: 24px
+			font-family: "Montserrat-Bold" 
+			margin-bottom: 8px
+		span
+			color: #BBBBBB
+			font-size: 16px
+			text-align: right

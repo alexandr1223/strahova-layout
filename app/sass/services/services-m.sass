@@ -1,0 +1,226 @@
+@media (max-width: 1600px)
+    .tabbed-section__selector 
+        [class*="-tab-"]
+            width: 450px
+        a
+            &::after
+                width: 450px
+    .lawyer
+        &__item
+            padding: 0 15px
+            span
+                font-size: 14px
+@media (max-width: 1320px)
+    .services
+        margin-bottom: 90px
+        &__tab
+            padding: 60px 70px
+        &__container
+            width: 100%
+    .tabbed-section__selector 
+        display: flex
+        justify-content: space-around
+        height: 50px    
+        margin-bottom: 60px
+        [class*="-tab-"]
+            width: 350px
+        a
+            &::after
+                width: 350px
+    .information
+        .container
+            width: 100%
+            padding: 0 15px
+        
+@media (max-width: 992px)
+    .services
+        &__tab
+            padding: 40px 50px
+        &__doubleInput
+            display: flex
+            flex-direction: column
+            grid-gap: unset
+        &__hide
+            display: none
+    .tabbed-section__selector 
+        display: flex
+        justify-content: space-around
+        [class*="-tab-"]
+            width: 250px
+            padding-bottom: 30px
+        a
+            &::after
+                width: 250px
+    .health
+        margin-bottom: 40px
+        &__block
+            grid-template-columns: 1fr 1fr 1fr
+            grid-gap: 30px 20px
+            &--four
+                display: none
+        &__item
+            span
+                font-size: 14px
+            &--mobile
+                display: flex
+    .property
+        &__offerText
+            font-size: 16px
+    .lawyer
+        &__block
+            grid-template-columns: 1fr 1fr
+            grid-gap: 20px
+        &__item
+            padding: 0 10px
+            span
+                font-size: 14px
+
+@media (max-width: 768px)
+    .services
+        margin-bottom: 60px
+        &__tab
+            border-radius: 10px
+            padding: 30px 20px
+        &__doubleInput
+            display: flex
+            flex-direction: column
+            grid-gap: unset
+        &__hide
+            display: none
+        &__input
+            span
+                font-size: 16px
+                margin-bottom: 10px
+            input
+                margin-bottom: 30px
+                font-size: 15px
+                padding: 14px 15px
+        &__addBtn
+            font-size: 15px
+        &__checkbox
+            label
+                font-size: 14px
+                &::before
+                    margin-right: 10px
+        &__groupItem
+            display: flex
+            flex-direction: column
+        &__groupMore
+            display: grid
+            grid-template-columns: 1fr 1fr
+            input
+                grid-column-start: 1
+                grid-column-end: 3
+        &__radio-btn
+            label
+                padding: 14px 25px
+                text-align: center
+                height: auto
+                margin-bottom: 30px
+        &__passportGroup
+            display: flex
+            flex-direction: column
+        &__passportItem
+            width: 100%
+            input
+                margin-bottom: 30px
+                font-size: 15px
+                padding: 14px 15px
+        &__line
+            margin: 40px 0
+        &__period
+            margin-bottom: 30px
+        &__btn
+            margin: 0 auto
+            margin-top: 0
+        &__mobile
+            display: flex
+            flex-direction: column
+            margin-bottom: 50px !important
+            height: 70px !important
+            a
+                width: 100% !important
+                margin: 0 auto !important
+                &:not(:last-child)
+                    margin-bottom: 20px !important
+                    margin-top: 20px !important
+        &__title
+            font-size: 18px
+    .lawyer
+        margin-bottom: 40px
+        &__block
+            display: flex
+            flex-direction: column
+            grid-gap: unset
+        &__item
+            max-width: 450px
+            margin: 0 auto
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 10px
+    .table
+        overflow-x: scroll
+        display: block
+        td
+            font-size: 14px
+            padding: 15px 8px
+        &__title
+            font-size: 18px
+        &__subtitle
+            font-size: 16px
+    .information
+        margin-bottom: 40px
+        &__title
+            font-size: 18px
+            margin-bottom: 20px
+        p
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 20px
+        &__list
+            li
+                font-size: 16px
+                &::before
+                    margin-left: 10px
+                    margin-right: 10px
+    .health
+        margin-bottom: 40px
+        &__block
+            grid-template-columns: 1fr 1fr
+            grid-gap: 30px 20px
+            &--four
+                display: none
+        &__item
+            span
+                font-size: 14px
+            &--mobile
+                display: flex
+            &:last-child
+                grid-column-start: 1
+                grid-column-end: 3
+
+    .property
+        &__text
+            font-size: 16px
+            line-height: 140%
+        &__offer
+            svg
+                min-width: 50px
+                margin-right: 20px
+        &__offerText
+            span
+                margin: 0 8px
+    .tabbed-section__selector 
+        display: flex
+        justify-content: space-around
+        margin-bottom: 30px
+        [class*="-tab-"]
+            height: 34px
+            width: 50%
+            padding-bottom: 30px
+        a
+            font-size: 18px
+            &::after
+                width: 100%
+    
+    
