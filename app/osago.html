@@ -86,17 +86,17 @@
 			<div class="services">
 				<div class="container services__container">
 					<div class="services__tab">
-						<form action="#" method="POST" class="services__form">
+						<form action="mail/osago-mail-buy.php" method="POST" class="services__form">
 							<div class="services__input">
 								<span>Город собственника</span>
-								<input type="text" name="city" placeholder="...">
+								<input require type="text" name="city" placeholder="...">
 							</div>
 							<div class="services__input">
 								<span>Автомобиль</span>
-								<input type="text" name="phone" placeholder="Категория ТС">
+								<input require type="text" name="auto" placeholder="Категория ТС">
 							</div>
 							<div class="services__checkbox">
-								<input type="checkbox" id="no-limit" name="no-limit" value="yes">
+								<input require type="checkbox" id="no-limit" name="no-limit" value="yes">
 								<label for="no-limit">Без ограничений водителей</label>
 							</div>
 							<div class="services__group">
@@ -104,9 +104,9 @@
 									<span>СОБСТВЕННИК</span>
 								</div>
 								<div class="services__groupItem services__input">
-									<input type="text" name="owner-fio" placeholder="Фамилия, имя, отчество">
+									<input require type="text" name="owner-fio" placeholder="Фамилия, имя, отчество">
 									<div class="services__groupMore">
-										<input type="date" name="birthday" placeholder="Дата рождения">
+										<input require type="date" name="date" placeholder="Дата рождения">
 										<div class="services__radio-btn">
 											<input id="man" type="radio" name="owner-radio" value="man" checked>
 											<label for="man">Муж.</label>
@@ -133,9 +133,9 @@
 											<span>ВОДИТЕЛЬ 1</span>
 										</div>
 										<div class="services__groupItem services__input">
-											<input type="text" name="owner-fio" placeholder="Фамилия, имя, отчество">
+											<input type="text" name="driver1" placeholder="Фамилия, имя, отчество">
 											<div class="services__groupMore">
-												<input type="date" name="birthday" placeholder="Дата рождения">
+												<input require type="date" name="birthday" placeholder="Дата рождения">
 												<div class="services__radio-btn">
 													<input id="driver-man" type="radio" name="driver-radio" value="man" checked>
 													<label for="driver-man">Муж.</label>
@@ -154,11 +154,11 @@
 										</div>
 										<div class="services__passportGroup">
 											<div class="services__passportItem">
-												<input type="text" class="services__passportSeries" name="passport-series" placeholder="Серия" maxlength="4">
-												<input type="text" class="services__passportNumber" name="passport-number" id="" maxlength="6" placeholder="Номер">
+												<input require type="text" class="services__passportSeries" name="passport-series" placeholder="Серия" maxlength="4">
+												<input require type="text" class="services__passportNumber" name="passport-number" id="" maxlength="6" placeholder="Номер">
 											</div>
 											<div class="services__passportItem">
-												<input type="date" name="birthday" placeholder="">
+												<input require type="date" name="birthday-vod" placeholder="">
 											</div>
 										</div>
 									</div>
@@ -178,9 +178,10 @@
 								</div>
 								
 								<select class="services__select">
-									<option value="1">ОБЫЧНЫЙ ДОГОВОР НА 1 ГОД</option>
-									<option value="2">ОБЫЧНЫЙ ДОГОВОР НА 2 ГОДА</option>
-									<option value="3">ОБЫЧНЫЙ ДОГОВОР НА 3 ГОДА</option>
+									<option value="3">ОБЫЧНЫЙ ДОГОВОР НА 3 МЕС</option>
+									<option value="6">ОБЫЧНЫЙ ДОГОВОР НА 6 МЕС</option>
+									<option value="9">ОБЫЧНЫЙ ДОГОВОР НА 9 МЕС</option>
+									<option value="12">ОБЫЧНЫЙ ДОГОВОР НА 1 ГОД</option>
 								</select>
 								<div class="services__doubleInput">
 									<div class="services__input">

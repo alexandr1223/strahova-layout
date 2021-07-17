@@ -92,14 +92,14 @@
 						</div>
 
 						<div class="tabbed-section-1 visible">
-							<form action="#" method="POST" class="services__form">
+							<form action="mail/kasko-mail-buy.php" method="POST" class="services__form">
 								<div class="services__input">
 									<span>Автомобиль</span>
-									<input type="text" name="auto" placeholder="Марка автомобиля">
+									<input required type="text" name="auto" placeholder="Марка автомобиля">
 								</div>
 								<div class="services__input">
 									<span>Укажите текущий пробег</span>
-									<input type="text" name="distance" placeholder="Текущий пробег, км">
+									<input required type="text" name="distance" placeholder="Текущий пробег, км">
 								</div>
 								<div class="services__input services__input--add services__kasko">
 									<div class="services__add">
@@ -108,26 +108,26 @@
 											+ Добавить водителя
 										</div>
 									</div>
-									<input type="text" name="driver" placeholder="Возраст водителя">
+									<input required type="text" name="driver" placeholder="Возраст водителя">
 								</div>
 								<div class="services__doubleInput">
 									<div class="services__input">
 										<span>Прописка собственника</span>
-										<input type="text" name="location" placeholder="...">
+										<input required type="text" name="location" placeholder="...">
 									</div>
 									<div class="services__input">
 										<span>Город преимущественной эксплуатации</span>
-										<input type="text" name="city" placeholder="...">
+										<input required type="text" name="city" placeholder="...">
 									</div>
 								</div>
 								<div class="services__doubleInput">
 									<div class="services__input">
 										<span>Срок страхование</span>
-										<input type="date" name="time1" placeholder="...">
+										<input required type="date" name="time1" placeholder="...">
 									</div>
 									<div class="services__input">
 										<span class="services__hide">Срок страхование</span>
-										<input type="date" name="time2" placeholder="...">
+										<input required type="date" name="time2" placeholder="...">
 									</div>
 								</div>
 								<button type="submit" class="services__btn btn">
@@ -136,15 +136,15 @@
 							</form>
 						</div>
 						<div class="tabbed-section-2 hidden">
-							<form action="#" method="POST" class="services__form">
+							<form action="mail/kasko-mail-extend.php" method="POST" class="services__form">
 								<div class="services__doubleInput">
 									<div class="services__input">
 										<span>Серия и номер полиса</span>
-										<input type="text" name="auto" placeholder="...">
+										<input type="text" name="number" placeholder="...">
 									</div>
 									<div class="services__input">
 										<span>Фамиля страхователя по договору</span>
-										<input type="text" name="auto" placeholder="...">
+										<input type="text" name="name" placeholder="...">
 									</div>
 								</div>
 								<button type="submit" class="services__btn btn">

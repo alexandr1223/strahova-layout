@@ -91,8 +91,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.querySelector('.services__addBtn').addEventListener('click', () => {
                 let input = document.createElement('input');
                 input.setAttribute('name', 'driver' + i);
-                input.setAttribute('placeholder', 'Возраст водителя')
-                input.style.cssText = 'margin-top: -30px'
+                input.setAttribute('placeholder', 'Возраст водителя');
                 i++;
                 document.querySelector('.services__input--add').appendChild(input)
             })
@@ -150,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     addOsagoDriver();
 
     function openDocument() {
-        document.querySelectorAll('.documents__hover img').forEach(item => {
+        document.querySelectorAll('.documents__item').forEach(item => {
             item.addEventListener('click', function() {
                 console.log(this.parentElement.parentElement.querySelector('img').src)
                 document.querySelector('.modal__block img').src = this.parentElement.parentElement.querySelector('img').src
@@ -191,4 +190,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $(function(){
         $("input[name='phone']").mask("+7999999999");
     });
+
 });
